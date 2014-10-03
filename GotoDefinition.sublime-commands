@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "GotoDefinitionEnhanced: Goto definition",
+    "command": "goto_definition_enhanced",
+  },
+]
