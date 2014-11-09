@@ -3,6 +3,7 @@
     "keys": ["ctrl+e"],
     "command": "goto_definition_enhanced",
     "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
       {"key": "scope_b_right", "operator": "not_regex_contains", "operand": "(text\\.html|text\\.css)(?!.*source)"}
     ],
   },

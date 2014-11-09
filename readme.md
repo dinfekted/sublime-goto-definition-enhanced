@@ -5,7 +5,7 @@ of default "goto definition".
 
 ### Demo
 
-![Demo](https://raw.github.com/shagabutdinov/sublime-goto-definition-enhanced/master/demo/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-goto-definition-enhanced/raw/master/demo/demo.gif "Demo")
 
 
 ### Installation
@@ -33,3 +33,8 @@ it'll work as it works by default.
 | Description     | Keyboard shortcut | Command palette                         |
 |-----------------|-------------------|-----------------------------------------|
 | Goto definition | ctrl+e            | GotoDefinitionEnhanced: Goto definition |
+
+
+### Dependencies
+
+None

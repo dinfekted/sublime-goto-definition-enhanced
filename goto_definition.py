@@ -1,11 +1,16 @@
 import sublime
 import sublime_plugin
 
-from Statement import statement
-from LocalVariable import local_variable
-from Method import method
-
 import re
+
+try:
+  from Statement import statement
+  from LocalVariable import local_variable
+  from Method import method
+except ImportError:
+  sublime.error_message("Dependency import failed; please read readme for " +
+    "GotoDefinitionEnhanced plugin for installation instructions; to disable " +
+    "this message remove this plugin")
 
 def goto_definition(view):
   if len(view.sel()) != 1:
