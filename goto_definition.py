@@ -16,6 +16,10 @@ def goto_definition(view):
   if len(view.sel()) != 1:
     return
 
+  if view.sel()[0].empty() == False:
+    view.window().run_command('goto_definition')
+    return
+
   point = view.sel()[0].b
   definition_point = _get_definition_point(view, point)
   if definition_point == None or definition_point == point:
