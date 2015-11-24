@@ -7,10 +7,11 @@ try:
   from Statement import statement
   from LocalVariable import local_variable
   from Method import method
-except ImportError:
+except ImportError as error:
   sublime.error_message("Dependency import failed; please read readme for " +
     "GotoDefinitionEnhanced plugin for installation instructions; to disable " +
-    "this message remove this plugin")
+    "this message remove this plugin; message: " + str(error))
+  raise error
 
 def goto_definition(view):
   if len(view.sel()) != 1:
